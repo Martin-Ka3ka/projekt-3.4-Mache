@@ -1,0 +1,79 @@
+.download {
+    // height: 100vh;
+
+    .browser {
+        margin-top: 35px;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    .download_text {
+        margin-top: 80px;
+
+        h3 {
+            font-size: 28px;
+            font-weight: 400;
+            font-style: italic;
+
+        }
+
+        .redline {
+            margin: 25px 0;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 14px;
+            margin-right: 40px;
+        }
+
+        button {
+            width: 202px;
+            height: 50px;
+            margin-top: 25px;
+            border: none;
+            background-color: $color-main;
+            // border-radius: 30px;
+            @include border-radius(30px);
+            color: $color-letters;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: .4s;
+            outline: none;
+
+            &:hover {
+                background-color: white;
+                color: red;
+                border: 1px solid red;
+            }
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

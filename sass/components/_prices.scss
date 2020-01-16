@@ -1,0 +1,111 @@
+.prices {
+    background-color: $color-gray;
+    // height: 100vh;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 60px;
+
+    h1 {
+        font-weight: 400;
+        font-size: 32px;
+        color: $color-letters;
+    }
+
+    .redline {
+        margin: 40px auto;
+    }
+
+    .describe_prices {
+        width: 60%;
+        margin: 0 auto;
+
+        padding-bottom: 40px;
+        line-height: 1.7;
+    }
+
+    .price_box {
+        background-color: aqua;
+        padding-bottom: 40px;
+
+        .top_box {
+            background-color: brown;
+            color: white;
+            position: relative;
+            transition: .6s;
+
+            h2 {
+                padding-top: 18px;
+                font-size: 4rem;
+                font-weight: 500;
+
+                span {
+                    font-size: 25px;
+                    padding-right: 5px;
+                }
+            }
+
+            h3 {
+                font-weight: 400;
+                padding-bottom: 45px;
+                font-size: 14px;
+            }
+
+            .version {
+                width: 200px;
+                height: 52px;
+                background-color: chartreuse;
+                border-radius: 30px;
+                position: absolute;
+                transform: translateX(-50%);
+                left: 50%;
+                top: 85%;
+
+                .name_version {
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    top: 50%;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+
+            +p {
+                margin-top: 60px;
+            }
+
+            ~p {
+                padding: 14px 0;
+
+            }
+
+            &:hover {
+                background-color: yellow;
+            }
+        }
+
+        button {
+            width: 200px;
+            height: 52px;
+            background-color: chartreuse;
+            border-radius: 30px;
+            margin: 0 auto;
+            margin-top: 22px;
+            letter-spacing: 1px;
+            outline: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 52px;
+            border: none;
+
+            &:hover {
+                background-color: yellow;
+            }
+
+        }
+
+
+
+
+    }
+}

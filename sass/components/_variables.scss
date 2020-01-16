@@ -1,0 +1,16 @@
+// variables
+$color-main: #ed145b;
+$color-letters:#fff;
+$color-gray:#ebe3e3;
+
+// extend
+.redline {
+    background-color: $color-main;
+    width: 194px;
+    height: 2px;
+}
+
+// mixin
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}

@@ -1,0 +1,33 @@
+.benefits {
+    margin: 80px auto;
+
+    .benefit_box {
+
+        img {
+            float: left;
+            max-width: 100%;
+            height: auto;
+
+        }
+
+        h2 {
+            float: left;
+            font-size: 17px;
+            padding-left: 32px;
+            margin-top: -7px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: $color-main;
+        }
+
+        p {
+            float: left;
+            padding-left: 88px;
+            text-align: justify;
+            line-height: 2;
+            margin-top: -20px;
+        }
+
+    }
+
+}

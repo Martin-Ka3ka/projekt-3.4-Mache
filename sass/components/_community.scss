@@ -1,0 +1,47 @@
+.community {
+    background-color: $color-main;
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 5px;
+
+        h1 {
+            text-transform: uppercase;
+            color: white;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-right: 30px;
+            font-size: 28px;
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+
+        button {
+            width: 200px;
+            height: 52px;
+            background-color: white;
+            border-radius: 30px;
+            text-align: center;
+            line-height: 52px;
+            transition: .5s;
+            text-transform: uppercase;
+            color: $color-main;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: .5s;
+            outline: none;
+            border: none;
+
+            &:hover {
+                background-color: red;
+                color: white;
+                border: 1px solid white;
+            }
+        }
+    }
+}

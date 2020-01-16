@@ -1,0 +1,16 @@
+.topline {
+
+    .topline_icon {
+        position: relative;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: -26px;
+            z-index: -1;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.template {
+    background-image: url('/images/woman.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-bottom: 120px;
+    margin-top: 30px;
+
+    h1 {
+        font-weight: 400;
+        font-size: 32px;
+        color: $color-letters;
+        padding-top: 100px;
+    }
+
+    .redline {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    p {
+        width: 60%;
+        margin: 35px auto;
+        color: $color-letters;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    button {
+        width: 202px;
+        height: 50px;
+        margin-top: 25px;
+        border: none;
+        background-color: $color-main;
+        // border-radius: 30px;
+        @include border-radius(30px);
+        color: $color-letters;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: .4s;
+        outline: none;
+
+        &:hover {
+            background-color: white;
+            color: red;
+        }
+    }
+
+
+}

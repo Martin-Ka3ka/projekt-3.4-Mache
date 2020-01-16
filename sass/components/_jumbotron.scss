@@ -1,0 +1,105 @@
+.jumbotron {
+    background-image: url(/images/woman.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 95vh;
+
+    header {
+        width: 1200px;
+        margin: 0 auto;
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 70px;
+
+            li {
+                padding: 5px 5px;
+                list-style: none;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $color-letters;
+                    letter-spacing: 0.4px;
+                    padding: 0 10px;
+                    transition: .5s;
+
+                    &:hover {
+                        color: $color-main;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .mache {
+        color: $color-letters;
+        font-size: 25px;
+        padding-left: 110px;
+
+        span {
+            color: $color-main;
+            padding-right: 6px;
+
+        }
+    }
+
+    .slogan {
+        text-align: center;
+        color: $color-letters;
+        margin-top: 30vh;
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 40px;
+            margin-left: 10px;
+
+            span {
+                color: $color-letters;
+                font-weight: 700;
+                padding-right: 15px;
+            }
+        }
+
+        .redline {
+            @extend .redline;
+            margin: 20px auto;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        button {
+            width: 202px;
+            height: 50px;
+            margin-top: 75px;
+            border: none;
+            background-color: $color-main;
+            // border-radius: 30px;
+            @include border-radius(30px);
+            color: $color-letters;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: .4s;
+            outline: none;
+
+            &:hover {
+                background-color: $color-letters;
+                color: $color-main;
+            }
+        }
+    }
+}
+
+/*media Queries*/

@@ -1,0 +1,94 @@
+.laptop {
+    // height: 52vh;
+    height: 460px;
+    background-color: $color-gray;
+    position: relative;
+    z-index: -2;
+
+    .laptop_title {
+
+        h1 {
+            font-weight: 400;
+            font-size: 22px;
+            letter-spacing: 1px;
+            padding-left: 190px;
+            margin-top: 135px;
+        }
+
+        .redline {
+            @extend .redline;
+            margin-left: 190px;
+            margin-top: 25px;
+        }
+    }
+
+    p {
+        font-size: 11px;
+        font-weight: 300;
+        padding-top: 25px;
+        margin-left: 190px;
+        line-height: 2;
+    }
+
+    .arrow {
+        position: relative;
+        color: $color-main;
+        text-transform: uppercase;
+        font-size: 6px;
+        margin-left: 190px;
+        padding-top: 18px;
+
+        h2 {
+            float: left;
+            padding-right: 8px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        img {
+            position: absolute;
+            max-width: 100%;
+            height: auto;
+            top: 18px;
+            left: 90px;
+        }
+
+        .circle {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            @include border-radius(50%);
+            border: 1px solid $color-main;
+            margin-left: 140px;
+            top: 10px;
+            left: -61px;
+        }
+    }
+
+    .macbook {
+        figure {
+            position: relative;
+        }
+
+        img:nth-child(1) {
+            position: absolute;
+            max-width: 100%;
+            height: auto;
+            top: 140px;
+            left: 10px;
+
+        }
+
+        img:nth-child(2) {
+            position: absolute;
+            top: 206px;
+            left: 84px;
+            max-width: 100%;
+            height: auto;
+            width: 74%;
+            z-index: 1;
+
+        }
+
+    }
+}

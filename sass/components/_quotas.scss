@@ -1,0 +1,40 @@
+.quotas {
+    background-image: url(/images/woman.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    max-width: 100%;
+    text-align: center;
+
+    .quota {
+        width: 80%;
+        margin: 0 auto;
+
+        p:nth-child(1) {
+            color: $color-main;
+            transform: rotate(180deg);
+            font-size: 8rem;
+            font-weight: 600;
+            position: relative;
+            top: 58px;
+            left: 0;
+        }
+
+        p:nth-child(2) {
+            color: $color-letters;
+            font-weight: 300;
+            font-style: italic;
+            letter-spacing: 1px;
+            line-height: 1.6;
+        }
+
+        p:nth-child(3) {
+            color: $color-main;
+            font-size: 8rem;
+            font-weight: 600;
+            position: relative;
+            top: -50px;
+            left: 0;
+        }
+    }
+}

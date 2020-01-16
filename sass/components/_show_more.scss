@@ -1,0 +1,19 @@
+.show_more {
+    text-align: center;
+    padding-bottom: 30px;
+
+    .more {
+        text-transform: uppercase;
+        color: red;
+
+        p {
+            font-weight: 500;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 28px;
+            color: red;
+        }
+    }
+}

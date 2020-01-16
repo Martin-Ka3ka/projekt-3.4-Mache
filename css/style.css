@@ -1,0 +1,825 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900&subset=latin-ext");
+.redline, .jumbotron .slogan .redline, .laptop .laptop_title .redline, .services .services_title .redline {
+  background-color: #ed145b;
+  width: 194px;
+  height: 2px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*column width*/
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.jumbotron {
+  background-image: url(/images/woman.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: 95vh;
+}
+
+.jumbotron header {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.jumbotron header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 70px;
+}
+
+.jumbotron header ul li {
+  padding: 5px 5px;
+  list-style: none;
+}
+
+.jumbotron header ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.4px;
+  padding: 0 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.jumbotron header ul li a:hover {
+  color: #ed145b;
+}
+
+.jumbotron .mache {
+  color: #fff;
+  font-size: 25px;
+  padding-left: 110px;
+}
+
+.jumbotron .mache span {
+  color: #ed145b;
+  padding-right: 6px;
+}
+
+.jumbotron .slogan {
+  text-align: center;
+  color: #fff;
+  margin-top: 30vh;
+}
+
+.jumbotron .slogan h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.jumbotron .slogan h1 span {
+  color: #fff;
+  font-weight: 700;
+  padding-right: 15px;
+}
+
+.jumbotron .slogan .redline {
+  margin: 20px auto;
+}
+
+.jumbotron .slogan p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.jumbotron .slogan button {
+  width: 202px;
+  height: 50px;
+  margin-top: 75px;
+  border: none;
+  background-color: #ed145b;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition: .4s;
+  transition: .4s;
+  outline: none;
+}
+
+.jumbotron .slogan button:hover {
+  background-color: #fff;
+  color: #ed145b;
+}
+
+/*media Queries*/
+.topline .topline_icon {
+  position: relative;
+}
+
+.topline .topline_icon img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: -26px;
+  z-index: -1;
+}
+
+.laptop {
+  height: 460px;
+  background-color: #ebe3e3;
+  position: relative;
+  z-index: -2;
+}
+
+.laptop .laptop_title h1 {
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 1px;
+  padding-left: 190px;
+  margin-top: 135px;
+}
+
+.laptop .laptop_title .redline {
+  margin-left: 190px;
+  margin-top: 25px;
+}
+
+.laptop p {
+  font-size: 11px;
+  font-weight: 300;
+  padding-top: 25px;
+  margin-left: 190px;
+  line-height: 2;
+}
+
+.laptop .arrow {
+  position: relative;
+  color: #ed145b;
+  text-transform: uppercase;
+  font-size: 6px;
+  margin-left: 190px;
+  padding-top: 18px;
+}
+
+.laptop .arrow h2 {
+  float: left;
+  padding-right: 8px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.laptop .arrow img {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  top: 18px;
+  left: 90px;
+}
+
+.laptop .arrow .circle {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #ed145b;
+  margin-left: 140px;
+  top: 10px;
+  left: -61px;
+}
+
+.laptop .macbook figure {
+  position: relative;
+}
+
+.laptop .macbook img:nth-child(1) {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  top: 140px;
+  left: 10px;
+}
+
+.laptop .macbook img:nth-child(2) {
+  position: absolute;
+  top: 206px;
+  left: 84px;
+  max-width: 100%;
+  height: auto;
+  width: 74%;
+  z-index: 1;
+}
+
+.services .services_title {
+  text-align: center;
+  margin-top: 130px;
+}
+
+.services .services_title h1 {
+  font-weight: 400;
+  font-size: 32px;
+  color: #ebe3e3;
+}
+
+.services .services_title .redline {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  margin-top: 40px;
+}
+
+.services .services_title p {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  line-height: 1.7;
+  color: #ebe3e3;
+}
+
+.services .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 110px;
+  height: 110px;
+  border: 1px solid #ebe3e3;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.services .icon img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.services .icon h2 {
+  color: #ed145b;
+  padding-top: 134px;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+.quotas {
+  background-image: url(/images/woman.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  max-width: 100%;
+  text-align: center;
+}
+
+.quotas .quota {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.quotas .quota p:nth-child(1) {
+  color: #ed145b;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-size: 8rem;
+  font-weight: 600;
+  position: relative;
+  top: 58px;
+  left: 0;
+}
+
+.quotas .quota p:nth-child(2) {
+  color: #fff;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.quotas .quota p:nth-child(3) {
+  color: #ed145b;
+  font-size: 8rem;
+  font-weight: 600;
+  position: relative;
+  top: -50px;
+  left: 0;
+}
+
+.prices {
+  background-color: #ebe3e3;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+.prices h1 {
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+}
+
+.prices .redline, .prices .jumbotron .slogan .redline, .jumbotron .slogan .prices .redline, .prices .laptop .laptop_title .redline, .laptop .laptop_title .prices .redline, .prices .services .services_title .redline, .services .services_title .prices .redline {
+  margin: 40px auto;
+}
+
+.prices .describe_prices {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  line-height: 1.7;
+}
+
+.prices .price_box {
+  background-color: aqua;
+  padding-bottom: 40px;
+}
+
+.prices .price_box .top_box {
+  background-color: brown;
+  color: white;
+  position: relative;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.prices .price_box .top_box h2 {
+  padding-top: 18px;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.prices .price_box .top_box h2 span {
+  font-size: 25px;
+  padding-right: 5px;
+}
+
+.prices .price_box .top_box h3 {
+  font-weight: 400;
+  padding-bottom: 45px;
+  font-size: 14px;
+}
+
+.prices .price_box .top_box .version {
+  width: 200px;
+  height: 52px;
+  background-color: chartreuse;
+  border-radius: 30px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 85%;
+}
+
+.prices .price_box .top_box .version .name_version {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.prices .price_box .top_box + p {
+  margin-top: 60px;
+}
+
+.prices .price_box .top_box ~ p {
+  padding: 14px 0;
+}
+
+.prices .price_box .top_box:hover {
+  background-color: yellow;
+}
+
+.prices .price_box button {
+  width: 200px;
+  height: 52px;
+  background-color: chartreuse;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 22px;
+  letter-spacing: 1px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 52px;
+  border: none;
+}
+
+.prices .price_box button:hover {
+  background-color: yellow;
+}
+
+.benefits {
+  margin: 80px auto;
+}
+
+.benefits .benefit_box img {
+  float: left;
+  max-width: 100%;
+  height: auto;
+}
+
+.benefits .benefit_box h2 {
+  float: left;
+  font-size: 17px;
+  padding-left: 32px;
+  margin-top: -7px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ed145b;
+}
+
+.benefits .benefit_box p {
+  float: left;
+  padding-left: 88px;
+  text-align: justify;
+  line-height: 2;
+  margin-top: -20px;
+}
+
+.community {
+  background-color: #ed145b;
+}
+
+.community .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 5px;
+}
+
+.community .banner h1 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-right: 30px;
+  font-size: 28px;
+}
+
+.community .banner h1 span {
+  font-weight: 600;
+}
+
+.community .banner button {
+  width: 200px;
+  height: 52px;
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 52px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-transform: uppercase;
+  color: #ed145b;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: .5s;
+  outline: none;
+  border: none;
+}
+
+.community .banner button:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+}
+
+.updates {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.updates h1 {
+  font-weight: 400;
+  font-size: 32px;
+  color: #ed145b;
+}
+
+.updates .redline, .updates .jumbotron .slogan .redline, .jumbotron .slogan .updates .redline, .updates .laptop .laptop_title .redline, .laptop .laptop_title .updates .redline, .updates .services .services_title .redline, .services .services_title .updates .redline {
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.updates .updates_content {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-bottom: 70px;
+}
+
+.updates .cards_box {
+  background-color: #c9bfbf;
+}
+
+.updates .cards_box .layer {
+  position: relative;
+  margin-bottom: -10px;
+}
+
+.updates .cards_box .layer ::after {
+  content: "";
+  background-color: crimson;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0.8;
+  height: 0;
+  z-index: 2;
+  -webkit-transition: .7s linear;
+  transition: .7s linear;
+  cursor: pointer;
+}
+
+.updates .cards_box .layer figure :nth-child(1) {
+  max-width: 100%;
+  width: 100%;
+}
+
+.updates .cards_box .layer figure :nth-child(2) {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.updates .cards_box .layer:hover ::after {
+  height: 100%;
+}
+
+.updates .cards_box .layer:hover + span {
+  opacity: 0.7;
+  z-index: 3;
+}
+
+.updates .cards_box span {
+  position: relative;
+  bottom: 130px;
+  font-size: 50px;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+  color: white;
+}
+
+.updates .cards_box .text {
+  text-align: left;
+  margin: 0 12px;
+  padding-bottom: 15px;
+  color: ivory;
+}
+
+.updates .cards_box .text h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 13px;
+  letter-spacing: 1px;
+}
+
+.show_more {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.show_more .more {
+  text-transform: uppercase;
+  color: red;
+}
+
+.show_more .more p {
+  font-weight: 500;
+}
+
+.show_more .more a {
+  text-decoration: none;
+  font-size: 28px;
+  color: red;
+}
+
+.template {
+  background-image: url("/images/woman.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-bottom: 120px;
+  margin-top: 30px;
+}
+
+.template h1 {
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.template .redline, .template .jumbotron .slogan .redline, .jumbotron .slogan .template .redline, .template .laptop .laptop_title .redline, .laptop .laptop_title .template .redline, .template .services .services_title .redline, .services .services_title .template .redline {
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.template p {
+  width: 60%;
+  margin: 35px auto;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.template button {
+  width: 202px;
+  height: 50px;
+  margin-top: 25px;
+  border: none;
+  background-color: #ed145b;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition: .4s;
+  transition: .4s;
+  outline: none;
+}
+
+.template button:hover {
+  background-color: white;
+  color: red;
+}
+
+.download .browser {
+  margin-top: 35px;
+}
+
+.download .browser img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.download .download_text {
+  margin-top: 80px;
+}
+
+.download .download_text h3 {
+  font-size: 28px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.download .download_text .redline {
+  margin: 25px 0;
+}
+
+.download .download_text p {
+  line-height: 1.8;
+  font-size: 14px;
+  margin-right: 40px;
+}
+
+.download .download_text button {
+  width: 202px;
+  height: 50px;
+  margin-top: 25px;
+  border: none;
+  background-color: #ed145b;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition: .4s;
+  transition: .4s;
+  outline: none;
+}
+
+.download .download_text button:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+footer .inner_footer div:nth-of-type(2) p > span {
+  font-weight: 600;
+}
+
+footer .inner_footer div:nth-of-type(2) p span:nth-of-type(2) {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
