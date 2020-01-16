@@ -4,7 +4,7 @@
 
     .more {
         text-transform: uppercase;
-        color: red;
+        color: $color-main;
 
         p {
             font-weight: 500;
@@ -13,7 +13,7 @@
         a {
             text-decoration: none;
             font-size: 28px;
-            color: red;
+            color: $color-main;
         }
     }
 }

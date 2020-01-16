@@ -5,7 +5,8 @@
     h1 {
         font-weight: 400;
         font-size: 32px;
-        color: $color-main;
+        color: $color-gray-letters;
+        font-style: italic;
     }
 
     .redline {
@@ -18,12 +19,13 @@
         margin: 0 auto;
         padding-top: 30px;
         margin-bottom: 70px;
+        letter-spacing: 1px;
+        color: $color-gray-letters;
     }
 
     .cards_box {
-        background-color: rgb(201,
-                191,
-                191);
+        background-color: $color-gray-background;
+
 
         .layer {
             position: relative;
@@ -32,7 +34,7 @@
 
             ::after {
                 content: "";
-                background-color: crimson;
+                background-color: $color-main;
                 bottom: 0;
                 left: 0;
                 right: 0;
@@ -40,7 +42,7 @@
                 opacity: 0.8;
                 height: 0;
                 z-index: 2;
-                transition: .7s linear;
+                transition: .5s linear;
                 cursor: pointer;
             }
 
@@ -76,14 +78,14 @@
             z-index: 0;
             opacity: 0;
             transition: 1.2s;
-            color: white;
+            color: $color-letters;
         }
 
         .text {
             text-align: left;
             margin: 0 12px;
             padding-bottom: 15px;
-            color: ivory;
+            color: $color-gray-letters;
 
             h2 {
                 text-transform: uppercase;

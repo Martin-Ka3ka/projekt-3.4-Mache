@@ -9,7 +9,7 @@
 
         h1 {
             text-transform: uppercase;
-            color: white;
+            color: $color-letters;
             font-weight: 300;
             letter-spacing: 1px;
             margin-right: 30px;
@@ -24,7 +24,7 @@
         button {
             width: 200px;
             height: 52px;
-            background-color: white;
+            background-color: $color-letters;
             border-radius: 30px;
             text-align: center;
             line-height: 52px;
@@ -38,9 +38,9 @@
             border: none;
 
             &:hover {
-                background-color: red;
-                color: white;
-                border: 1px solid white;
+                background-color: $color-main;
+                color: $color-letters;
+                border: 1px solid $color-letters;
             }
         }
     }

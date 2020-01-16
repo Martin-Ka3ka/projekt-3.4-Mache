@@ -1,18 +1,19 @@
 .laptop {
     // height: 52vh;
     height: 460px;
-    background-color: $color-gray;
+    background-color: $color-gray-background;
     position: relative;
     z-index: -2;
 
     .laptop_title {
 
         h1 {
-            font-weight: 400;
+            font-weight: 300;
             font-size: 22px;
             letter-spacing: 1px;
             padding-left: 190px;
             margin-top: 135px;
+            color: $color-gray-letters;
         }
 
         .redline {
@@ -28,6 +29,7 @@
         padding-top: 25px;
         margin-left: 190px;
         line-height: 2;
+        color: $color-gray-letters;
     }
 
     .arrow {

@@ -1,9 +1,12 @@
 // variables
-$color-main: #ed145b;
-$color-letters:#fff;
-$color-gray:#ebe3e3;
-
+$color-main:rgb(237, 20, 91);
+$color-letters:rgb(255, 255, 255);
+$color-gray-background:rgb(244, 244, 244);
+$color-gray-letters:rgb(131, 131, 131);
+$color-strong-gray:rgb(90, 90, 90);
+$color-background-footer:rgb(43, 43, 43);
 // extend
+
 .redline {
     background-color: $color-main;
     width: 194px;

@@ -119,7 +119,7 @@ body {
   text-decoration: none;
   font-size: 16px;
   font-weight: 700;
-  color: #fff;
+  color: white;
   letter-spacing: 0.4px;
   padding: 0 10px;
   -webkit-transition: .5s;
@@ -131,7 +131,7 @@ body {
 }
 
 .jumbotron .mache {
-  color: #fff;
+  color: white;
   font-size: 25px;
   padding-left: 110px;
 }
@@ -143,19 +143,19 @@ body {
 
 .jumbotron .slogan {
   text-align: center;
-  color: #fff;
+  color: white;
   margin-top: 30vh;
 }
 
 .jumbotron .slogan h1 {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 40px;
   margin-left: 10px;
 }
 
 .jumbotron .slogan h1 span {
-  color: #fff;
+  color: white;
   font-weight: 700;
   padding-right: 15px;
 }
@@ -176,7 +176,7 @@ body {
   border: none;
   background-color: #ed145b;
   border-radius: 30px;
-  color: #fff;
+  color: white;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -187,7 +187,7 @@ body {
 }
 
 .jumbotron .slogan button:hover {
-  background-color: #fff;
+  background-color: white;
   color: #ed145b;
 }
 
@@ -208,17 +208,18 @@ body {
 
 .laptop {
   height: 460px;
-  background-color: #ebe3e3;
+  background-color: #f4f4f4;
   position: relative;
   z-index: -2;
 }
 
 .laptop .laptop_title h1 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 22px;
   letter-spacing: 1px;
   padding-left: 190px;
   margin-top: 135px;
+  color: #838383;
 }
 
 .laptop .laptop_title .redline {
@@ -232,6 +233,7 @@ body {
   padding-top: 25px;
   margin-left: 190px;
   line-height: 2;
+  color: #838383;
 }
 
 .laptop .arrow {
@@ -298,8 +300,9 @@ body {
 
 .services .services_title h1 {
   font-weight: 400;
+  font-style: italic;
   font-size: 32px;
-  color: #ebe3e3;
+  color: #838383;
 }
 
 .services .services_title .redline {
@@ -315,8 +318,9 @@ body {
   margin: 0 auto;
   padding-top: 80px;
   padding-bottom: 90px;
-  line-height: 1.7;
-  color: #ebe3e3;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  color: #838383;
 }
 
 .services .icon {
@@ -328,7 +332,7 @@ body {
           justify-content: center;
   width: 110px;
   height: 110px;
-  border: 1px solid #ebe3e3;
+  border: 1px solid #838383;
   border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 90px;
@@ -379,7 +383,7 @@ body {
 }
 
 .quotas .quota p:nth-child(2) {
-  color: #fff;
+  color: white;
   font-weight: 300;
   font-style: italic;
   letter-spacing: 1px;
@@ -396,7 +400,7 @@ body {
 }
 
 .prices {
-  background-color: #ebe3e3;
+  background-color: #f4f4f4;
   text-align: center;
   padding-top: 70px;
   padding-bottom: 60px;
@@ -404,8 +408,9 @@ body {
 
 .prices h1 {
   font-weight: 400;
+  font-style: italic;
   font-size: 32px;
-  color: #fff;
+  color: #838383;
 }
 
 .prices .redline, .prices .jumbotron .slogan .redline, .jumbotron .slogan .prices .redline, .prices .laptop .laptop_title .redline, .laptop .laptop_title .prices .redline, .prices .services .services_title .redline, .services .services_title .prices .redline {
@@ -417,15 +422,17 @@ body {
   margin: 0 auto;
   padding-bottom: 40px;
   line-height: 1.7;
+  letter-spacing: 1px;
+  color: #838383;
 }
 
 .prices .price_box {
-  background-color: aqua;
+  background-color: white;
   padding-bottom: 40px;
 }
 
 .prices .price_box .top_box {
-  background-color: brown;
+  background-color: #5a5a5a;
   color: white;
   position: relative;
   -webkit-transition: .6s;
@@ -452,7 +459,8 @@ body {
 .prices .price_box .top_box .version {
   width: 200px;
   height: 52px;
-  background-color: chartreuse;
+  background-color: #f4f4f4;
+  color: #5a5a5a;
   border-radius: 30px;
   position: absolute;
   -webkit-transform: translateX(-50%);
@@ -473,20 +481,22 @@ body {
 
 .prices .price_box .top_box + p {
   margin-top: 60px;
+  color: #838383;
 }
 
 .prices .price_box .top_box ~ p {
   padding: 14px 0;
+  color: #838383;
 }
 
 .prices .price_box .top_box:hover {
-  background-color: yellow;
+  background-color: #ed145b;
 }
 
 .prices .price_box button {
   width: 200px;
   height: 52px;
-  background-color: chartreuse;
+  background-color: #ed145b;
   border-radius: 30px;
   margin: 0 auto;
   margin-top: 22px;
@@ -496,10 +506,15 @@ body {
   font-weight: 600;
   line-height: 52px;
   border: none;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .prices .price_box button:hover {
-  background-color: yellow;
+  background-color: white;
+  color: #ed145b;
+  border: 1px solid #ed145b;
 }
 
 .benefits {
@@ -528,6 +543,7 @@ body {
   text-align: justify;
   line-height: 2;
   margin-top: -20px;
+  color: #838383;
 }
 
 .community {
@@ -579,7 +595,7 @@ body {
 }
 
 .community .banner button:hover {
-  background-color: red;
+  background-color: #ed145b;
   color: white;
   border: 1px solid white;
 }
@@ -592,7 +608,8 @@ body {
 .updates h1 {
   font-weight: 400;
   font-size: 32px;
-  color: #ed145b;
+  color: #838383;
+  font-style: italic;
 }
 
 .updates .redline, .updates .jumbotron .slogan .redline, .jumbotron .slogan .updates .redline, .updates .laptop .laptop_title .redline, .laptop .laptop_title .updates .redline, .updates .services .services_title .redline, .services .services_title .updates .redline {
@@ -605,10 +622,12 @@ body {
   margin: 0 auto;
   padding-top: 30px;
   margin-bottom: 70px;
+  letter-spacing: 1px;
+  color: #838383;
 }
 
 .updates .cards_box {
-  background-color: #c9bfbf;
+  background-color: #f4f4f4;
 }
 
 .updates .cards_box .layer {
@@ -618,7 +637,7 @@ body {
 
 .updates .cards_box .layer ::after {
   content: "";
-  background-color: crimson;
+  background-color: #ed145b;
   bottom: 0;
   left: 0;
   right: 0;
@@ -626,8 +645,8 @@ body {
   opacity: 0.8;
   height: 0;
   z-index: 2;
-  -webkit-transition: .7s linear;
-  transition: .7s linear;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
   cursor: pointer;
 }
 
@@ -668,7 +687,7 @@ body {
   text-align: left;
   margin: 0 12px;
   padding-bottom: 15px;
-  color: ivory;
+  color: #838383;
 }
 
 .updates .cards_box .text h2 {
@@ -685,7 +704,7 @@ body {
 
 .show_more .more {
   text-transform: uppercase;
-  color: red;
+  color: #ed145b;
 }
 
 .show_more .more p {
@@ -695,7 +714,7 @@ body {
 .show_more .more a {
   text-decoration: none;
   font-size: 28px;
-  color: red;
+  color: #ed145b;
 }
 
 .template {
@@ -709,10 +728,11 @@ body {
 }
 
 .template h1 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 32px;
-  color: #fff;
+  color: white;
   padding-top: 100px;
+  font-style: italic;
 }
 
 .template .redline, .template .jumbotron .slogan .redline, .jumbotron .slogan .template .redline, .template .laptop .laptop_title .redline, .laptop .laptop_title .template .redline, .template .services .services_title .redline, .services .services_title .template .redline {
@@ -723,9 +743,9 @@ body {
 .template p {
   width: 60%;
   margin: 35px auto;
-  color: #fff;
+  color: white;
   letter-spacing: 1px;
-  line-height: 1.6;
+  line-height: 1.7;
   font-weight: 300;
 }
 
@@ -736,7 +756,7 @@ body {
   border: none;
   background-color: #ed145b;
   border-radius: 30px;
-  color: #fff;
+  color: white;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -748,7 +768,7 @@ body {
 
 .template button:hover {
   background-color: white;
-  color: red;
+  color: #ed145b;
 }
 
 .download .browser {
@@ -769,6 +789,7 @@ body {
   font-size: 28px;
   font-weight: 400;
   font-style: italic;
+  color: #838383;
 }
 
 .download .download_text .redline {
@@ -779,6 +800,7 @@ body {
   line-height: 1.8;
   font-size: 14px;
   margin-right: 40px;
+  color: #838383;
 }
 
 .download .download_text button {
@@ -788,7 +810,7 @@ body {
   border: none;
   background-color: #ed145b;
   border-radius: 30px;
-  color: #fff;
+  color: white;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -800,13 +822,13 @@ body {
 
 .download .download_text button:hover {
   background-color: white;
-  color: red;
-  border: 1px solid red;
+  color: #ed145b;
+  border: 1px solid #ed145b;
 }
 
 footer {
   margin-top: 20px;
-  background-color: black;
+  background-color: #2b2b2b;
   color: white;
   text-transform: uppercase;
   padding: 20px 0;

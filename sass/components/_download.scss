@@ -19,6 +19,7 @@
             font-size: 28px;
             font-weight: 400;
             font-style: italic;
+            color: $color-gray-letters;
 
         }
 
@@ -30,6 +31,7 @@
             line-height: 1.8;
             font-size: 14px;
             margin-right: 40px;
+            color: $color-gray-letters;
         }
 
         button {
@@ -49,15 +51,11 @@
             outline: none;
 
             &:hover {
-                background-color: white;
-                color: red;
-                border: 1px solid red;
+                background-color: $color-letters;
+                color: $color-main;
+                border: 1px solid $color-main;
             }
         }
-
-
-
-
     }
 
 
