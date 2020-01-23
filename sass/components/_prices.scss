@@ -32,6 +32,7 @@
             background-color: $color-strong-gray;
             color: $color-letters;
             position: relative;
+            cursor: pointer;
             transition: .6s;
 
             h2 {
@@ -101,6 +102,7 @@
             font-weight: 600;
             line-height: 52px;
             border: none;
+            cursor: pointer;
             color: $color-letters;
             transition: .5s;
 

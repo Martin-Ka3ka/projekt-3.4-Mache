@@ -6,7 +6,6 @@
 
         img {
             max-width: 100%;
-            width: 100%;
             height: auto;
         }
 
@@ -49,6 +48,7 @@
             text-transform: uppercase;
             transition: .4s;
             outline: none;
+            cursor: pointer;
 
             &:hover {
                 background-color: $color-letters;

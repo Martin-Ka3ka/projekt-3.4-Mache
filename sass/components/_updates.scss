@@ -49,15 +49,15 @@
             figure {
                 :nth-child(1) {
                     max-width: 100%;
-                    width: 100%;
+                    height: auto;
                 }
 
                 :nth-child(2) {
                     position: absolute;
                     bottom: 1px;
                     left: 0;
-                    width: 100%;
                     max-width: 100%;
+                    height: auto;
                 }
             }
 
