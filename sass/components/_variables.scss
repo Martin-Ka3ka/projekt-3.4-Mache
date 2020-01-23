@@ -5,6 +5,7 @@ $color-gray-background:rgb(244, 244, 244);
 $color-gray-letters:rgb(131, 131, 131);
 $color-strong-gray:rgb(90, 90, 90);
 $color-background-footer:rgb(43, 43, 43);
+
 // extend
 
 .redline {
@@ -14,6 +15,23 @@ $color-background-footer:rgb(43, 43, 43);
 }
 
 // mixin
+
 @mixin border-radius($radius) {
     border-radius: $radius;
+}
+
+@mixin button-style {
+    @include border-radius(30px);
+    width: 200px;
+    height: 52px;
+    font-size: 15px;
+    line-height: 52px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-align: center;
+    transition: .5s;
 }

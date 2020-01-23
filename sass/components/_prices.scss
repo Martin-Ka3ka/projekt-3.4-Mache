@@ -90,21 +90,12 @@
         }
 
         button {
-            width: 200px;
-            height: 52px;
+            @include button-style;
             background-color: $color-main;
-            border-radius: 30px;
             margin: 0 auto;
             margin-top: 22px;
-            letter-spacing: 1px;
-            outline: none;
-            text-transform: uppercase;
-            font-weight: 600;
-            line-height: 52px;
             border: none;
-            cursor: pointer;
             color: $color-letters;
-            transition: .5s;
 
             &:hover {
                 background-color: $color-letters;

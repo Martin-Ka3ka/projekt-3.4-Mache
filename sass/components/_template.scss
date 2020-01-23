@@ -30,21 +30,10 @@
     }
 
     button {
-        width: 202px;
-        height: 50px;
+        @include button-style;
         margin-top: 25px;
-        border: none;
         background-color: $color-main;
-        // border-radius: 30px;
-        @include border-radius(30px);
         color: $color-letters;
-        font-size: 15px;
-        font-weight: 500;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: .4s;
-        outline: none;
 
         &:hover {
             background-color: $color-letters;

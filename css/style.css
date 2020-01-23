@@ -169,21 +169,26 @@ body {
 }
 
 .jumbotron .slogan button {
-  width: 202px;
-  height: 50px;
-  margin-top: 75px;
-  border: none;
-  background-color: #ed145b;
   border-radius: 30px;
-  color: white;
+  width: 200px;
+  height: 52px;
   font-size: 15px;
+  line-height: 52px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-top: 75px;
+  border: none;
+  background-color: #ed145b;
+  color: white;
   -webkit-transition: .4s;
   transition: .4s;
-  outline: none;
-  cursor: pointer;
 }
 
 .jumbotron .slogan button:hover {
@@ -590,22 +595,25 @@ body {
 }
 
 .prices .price_box button {
+  border-radius: 30px;
   width: 200px;
   height: 52px;
-  background-color: #ed145b;
-  border-radius: 30px;
-  margin: 0 auto;
-  margin-top: 22px;
-  letter-spacing: 1px;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 600;
+  font-size: 15px;
   line-height: 52px;
-  border: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   cursor: pointer;
-  color: white;
+  outline: none;
+  border: none;
+  text-align: center;
   -webkit-transition: .5s;
   transition: .5s;
+  background-color: #ed145b;
+  margin: 0 auto;
+  margin-top: 22px;
+  border: none;
+  color: white;
 }
 
 .prices .price_box button:hover {
@@ -674,22 +682,22 @@ body {
 }
 
 .community .banner button {
+  border-radius: 30px;
   width: 200px;
   height: 52px;
-  background-color: white;
-  border-radius: 30px;
-  text-align: center;
+  font-size: 15px;
   line-height: 52px;
-  -webkit-transition: .5s;
-  transition: .5s;
-  text-transform: uppercase;
-  color: #ed145b;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
-  transition: .5s;
+  text-transform: uppercase;
+  cursor: pointer;
   outline: none;
   border: none;
-  cursor: pointer;
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
+  color: #ed145b;
 }
 
 .community .banner button:hover {
@@ -848,21 +856,23 @@ body {
 }
 
 .template button {
-  width: 202px;
-  height: 50px;
-  margin-top: 25px;
-  border: none;
-  background-color: #ed145b;
   border-radius: 30px;
-  color: white;
+  width: 200px;
+  height: 52px;
   font-size: 15px;
+  line-height: 52px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
-  -webkit-transition: .4s;
-  transition: .4s;
   outline: none;
+  border: none;
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-top: 25px;
+  background-color: #ed145b;
+  color: white;
 }
 
 .template button:hover {
@@ -902,21 +912,23 @@ body {
 }
 
 .download .download_text button {
-  width: 202px;
-  height: 50px;
-  margin-top: 25px;
-  border: none;
-  background-color: #ed145b;
   border-radius: 30px;
-  color: white;
-  font-size: 14px;
+  width: 200px;
+  height: 52px;
+  font-size: 15px;
+  line-height: 52px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
-  -webkit-transition: .4s;
-  transition: .4s;
-  outline: none;
   cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-top: 25px;
+  background-color: #ed145b;
+  color: white;
 }
 
 .download .download_text button:hover {
