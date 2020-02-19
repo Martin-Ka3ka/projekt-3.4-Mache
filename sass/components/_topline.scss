@@ -13,3 +13,69 @@
         }
     }
 }
+
+
+/*media Queries*/
+
+@media(max-width: 1366px) {
+    .topline {
+        .topline_icon {
+            img {
+                top: -27px;
+
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .topline {
+        .topline_icon {
+            img {
+                top: -20px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) and (orientation:landscape) {
+    .topline {
+        .topline_icon {
+            img {
+                top: -15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) and (orientation:portrait) {
+    .topline {
+        .topline_icon {
+            img {
+                top: -8px;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) and (orientation:portrait) {
+    .topline {
+        .topline_icon {
+            img {
+                top: -5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) and (orientation:landscape) {
+    .topline {
+        .topline_icon {
+            img {
+                top: -8px;
+            }
+        }
+    }
+}
