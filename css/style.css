@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900&subset=latin-ext");
-.redline, .jumbotron .slogan .redline, .laptop .laptop_title .redline, .services .services_title .redline {
+.redline, .slogan .redline, .laptop .laptop_title .redline, .services .services_title .redline {
   background-color: #ed145b;
   width: 194px;
   height: 2px;
@@ -84,20 +84,23 @@ body {
   width: 100%;
 }
 
-.jumbotron {
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+header {
   background-image: url("../images/woman.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 95vh;
+  height: 100vh;
 }
 
-.jumbotron header {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.jumbotron header ul {
+header ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
@@ -105,12 +108,12 @@ body {
   margin-right: 70px;
 }
 
-.jumbotron header ul li {
+header ul li {
   padding: 5px 5px;
   list-style: none;
 }
 
-.jumbotron header ul li a {
+header ul li a {
   display: block;
   text-decoration: none;
   font-size: 16px;
@@ -121,50 +124,50 @@ body {
   transition: .5s;
 }
 
-.jumbotron header ul li a:hover {
+header ul li a:hover {
   color: #ed145b;
 }
 
-.jumbotron .mache {
+.mache {
   color: white;
   font-size: 25px;
   padding-left: 110px;
 }
 
-.jumbotron .mache span {
+.mache span {
   color: #ed145b;
   padding-right: 6px;
 }
 
-.jumbotron .slogan {
+.slogan {
   text-align: center;
   color: white;
   margin-top: 30vh;
 }
 
-.jumbotron .slogan h1 {
+.slogan h1 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 40px;
   margin-left: 10px;
 }
 
-.jumbotron .slogan h1 span {
+.slogan h1 span {
   color: white;
   font-weight: 700;
   padding-right: 15px;
 }
 
-.jumbotron .slogan .redline {
+.slogan .redline, .slogan .laptop .laptop_title .redline, .laptop .laptop_title .slogan .redline, .slogan .services .services_title .redline, .services .services_title .slogan .redline {
   margin: 20px auto;
 }
 
-.jumbotron .slogan p {
+.slogan p {
   font-size: 18px;
   font-weight: 300;
 }
 
-.jumbotron .slogan button {
+.slogan button {
   border-radius: 30px;
   width: 200px;
   height: 52px;
@@ -178,107 +181,129 @@ body {
   border: none;
   text-align: center;
   transition: .5s;
-  margin-top: 75px;
+  margin-top: 15vh;
   border: none;
   background-color: #ed145b;
   color: white;
   transition: .4s;
 }
 
-.jumbotron .slogan button:hover {
+.slogan button:hover {
   background-color: white;
   color: #ed145b;
 }
 
 /*media Queries*/
-@media (max-width: 1199px) and (orientation: landscape) {
-  .jumbotron {
-    background-image: url("../images/woman.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 95vh;
+@media (max-width: 1366px) {
+  header ul li a {
+    font-size: 18px;
   }
-  .jumbotron header {
-    width: 800px;
+  .slogan h1 {
+    font-size: 45px;
+  }
+  .slogan p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  header ul {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .slogan {
+    margin-top: 15vh;
+  }
+  .slogan p {
+    font-size: 18px;
+  }
+  .slogan button {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  header ul {
+    -ms-flex-pack: center;
+        justify-content: center;
     margin: 0 auto;
   }
-  .jumbotron header ul {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-    margin-right: 70px;
+  header ul li a {
+    font-size: 20px;
   }
-  .jumbotron header ul li {
-    padding: 5px 5px;
-    list-style: none;
+  .mache {
+    font-size: 28px;
   }
-  .jumbotron header ul li a {
-    display: block;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    color: white;
-    letter-spacing: 0.4px;
-    padding: 0 10px;
-    transition: .5s;
-  }
-  .jumbotron header ul li a:hover {
-    color: #ed145b;
-  }
-  .jumbotron .mache {
-    color: white;
-    font-size: 25px;
-    padding-left: 110px;
-  }
-  .jumbotron .mache span {
-    color: #ed145b;
-    padding-right: 6px;
-  }
-  .jumbotron .slogan {
-    text-align: center;
-    color: white;
+  .slogan {
     margin-top: 30vh;
   }
-  .jumbotron .slogan h1 {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 40px;
-    margin-left: 10px;
+  .slogan h1 {
+    font-size: 44px;
+    margin-left: 0;
   }
-  .jumbotron .slogan h1 span {
+  .slogan p {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  header ul {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 0 auto;
+  }
+  .mache {
+    padding-left: 120px;
+  }
+  .slogan {
+    margin-top: 2vh;
+  }
+  .slogan h1 {
+    font-size: 35px;
+    margin-left: 0;
+  }
+  .slogan p {
+    font-size: 12px;
+  }
+  .slogan button {
+    margin-top: 4vh;
+  }
+}
+
+@media (max-width: 414px) and (orientation: landscape) {
+  header ul {
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0 auto;
+    margin-top: -28px;
+  }
+  header ul li a {
+    font-size: 13px;
+  }
+  .mache {
+    font-size: 15px;
+    padding-left: 140px;
+  }
+  .slogan {
+    margin-top: -10px;
+  }
+  .slogan h1 {
+    font-size: 25px;
+  }
+  .slogan h1 span {
     color: white;
     font-weight: 700;
     padding-right: 15px;
   }
-  .jumbotron .slogan .redline {
-    margin: 20px auto;
+  .slogan p {
+    font-size: 10px;
+    padding: 0 2px;
   }
-  .jumbotron .slogan p {
-    font-size: 18px;
-    font-weight: 300;
-  }
-  .jumbotron .slogan button {
-    width: 202px;
-    height: 50px;
-    margin-top: 75px;
-    border: none;
-    background-color: #ed145b;
-    border-radius: 30px;
-    color: white;
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: .4s;
-    outline: none;
-  }
-  .jumbotron .slogan button:hover {
-    background-color: white;
-    color: #ed145b;
+  .slogan button {
+    margin-top: 5px;
   }
 }
 
@@ -497,7 +522,7 @@ body {
   color: #838383;
 }
 
-.prices .redline, .prices .jumbotron .slogan .redline, .jumbotron .slogan .prices .redline, .prices .laptop .laptop_title .redline, .laptop .laptop_title .prices .redline, .prices .services .services_title .redline, .services .services_title .prices .redline {
+.prices .redline, .prices .laptop .laptop_title .redline, .laptop .laptop_title .prices .redline, .prices .services .services_title .redline, .services .services_title .prices .redline {
   margin: 40px auto;
 }
 
@@ -694,7 +719,7 @@ body {
   font-style: italic;
 }
 
-.updates .redline, .updates .jumbotron .slogan .redline, .jumbotron .slogan .updates .redline, .updates .laptop .laptop_title .redline, .laptop .laptop_title .updates .redline, .updates .services .services_title .redline, .services .services_title .updates .redline {
+.updates .redline, .updates .laptop .laptop_title .redline, .laptop .laptop_title .updates .redline, .updates .services .services_title .redline, .services .services_title .updates .redline {
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -815,7 +840,7 @@ body {
   font-style: italic;
 }
 
-.template .redline, .template .jumbotron .slogan .redline, .jumbotron .slogan .template .redline, .template .laptop .laptop_title .redline, .laptop .laptop_title .template .redline, .template .services .services_title .redline, .services .services_title .template .redline {
+.template .redline, .template .laptop .laptop_title .redline, .laptop .laptop_title .template .redline, .template .services .services_title .redline, .services .services_title .template .redline {
   margin: 0 auto;
   margin-top: 40px;
 }
