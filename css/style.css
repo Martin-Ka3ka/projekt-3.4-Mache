@@ -88,7 +88,6 @@ body {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
-    overflow: hidden;
   }
 }
 
@@ -212,13 +211,13 @@ header ul li a:hover {
         justify-content: center;
   }
   .slogan {
-    margin-top: 15vh;
+    margin-top: 6vh;
   }
   .slogan p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .slogan button {
-    margin-top: 40px;
+    margin-top: 32px;
   }
 }
 
@@ -229,13 +228,13 @@ header ul li a:hover {
     margin: 0 auto;
   }
   header ul li a {
-    font-size: 20px;
+    font-size: 16px;
   }
   .mache {
     font-size: 28px;
   }
   .slogan {
-    margin-top: 30vh;
+    margin-top: 16vh;
   }
   .slogan h1 {
     font-size: 44px;
@@ -347,7 +346,7 @@ header ul li a:hover {
 
 @media (max-width: 414px) and (orientation: portrait) {
   .topline .topline_icon img {
-    top: -5px;
+    top: -8px;
   }
 }
 
@@ -426,7 +425,7 @@ header ul li a:hover {
   position: relative;
 }
 
-.laptop .macbook img:nth-child(1) {
+.laptop .macbook figure img:nth-child(1) {
   position: absolute;
   max-width: 100%;
   height: auto;
@@ -434,9 +433,9 @@ header ul li a:hover {
   left: 10px;
 }
 
-.laptop .macbook img:nth-child(2) {
+.laptop .macbook figure img:nth-child(2) {
   position: absolute;
-  top: 206px;
+  top: 175px;
   left: 84px;
   max-width: 100%;
   height: auto;
@@ -444,9 +443,91 @@ header ul li a:hover {
   z-index: 1;
 }
 
+/*media Queries*/
+@media (max-width: 1024px) {
+  .laptop {
+    height: 420px;
+  }
+  .laptop .laptop_title h1 {
+    font-size: 18px;
+  }
+  .laptop p {
+    font-size: 9px;
+  }
+  .laptop .macbook figure img:nth-child(2) {
+    top: 160px;
+    left: 71px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .laptop {
+    height: 320px;
+  }
+  .laptop .laptop_title h1 {
+    font-size: 20px;
+    margin-top: 70px;
+  }
+  .laptop p {
+    font-size: 10px;
+  }
+  .laptop .macbook figure img:nth-child(1) {
+    position: static;
+  }
+  .laptop .macbook figure img:nth-child(2) {
+    top: 36px;
+    left: 92px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .laptop {
+    height: 80vh;
+  }
+  .laptop .laptop_title h1 {
+    font-size: 25px;
+    margin-top: 60px;
+  }
+  .laptop p {
+    font-size: 12px;
+  }
+  .laptop .macbook figure img:nth-child(1) {
+    position: static;
+  }
+  .laptop .macbook figure img:nth-child(2) {
+    top: 20px;
+    left: 49px;
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  .laptop {
+    height: 95vh;
+  }
+  .laptop .macbook figure img:nth-child(1) {
+    position: static;
+  }
+  .laptop .macbook figure img:nth-child(2) {
+    top: 18px;
+    left: 49px;
+  }
+}
+
+@media (max-width: 414px) and (orientation: landscape) {
+  .laptop {
+    height: 143vh;
+  }
+  .laptop .macbook figure img:nth-child(2) {
+    left: 49px;
+  }
+}
+
+.services {
+  padding-top: 10vh;
+}
+
 .services .services_title {
   text-align: center;
-  margin-top: 130px;
 }
 
 .services .services_title h1 {
